@@ -1,14 +1,26 @@
 # Lab10Web
-# Praktikum Pertemuan 11
+# Praktikum 10
+
 # 1. Mobil.php
+
 Class digunakan untuk mendeklarasikan sebuah variabel yang berupa objek. Di dalam class ini akan di isi oleh properti, method dan lain-lain seperti contoh di bawah ini.
 
-foto
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/mobil1.JPG)
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/mobil2.JPG)
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/mobil3.JPG)
 
-Kode di atas mempunyai class "Mobil" dengan properti $warna, $merk dan $harga. Lalu memiliki method dengan magic method __construct(), dimana method ini berperan sebagai method parent dalam konsep inheritance pada Object Oriented Programming.
+Pada output di atas, mobil pertama yang mengacu pada objek dengan variabel $a memiliki mobil dengan warna biru sebagai warna default yang dimiliki method parent. Lalu warna mobil diganti warna merah menggunakan fitur contructor untuk mendefinisikan warna baru saat instansiasi objek.
 
-Selanjutnya di ada method gantiWarna dan tampilWarna yang berperan sebagai child method yang mempunyai nilai spesifik.
+Untuk mobil kedua ($b) sama seperti warna merah, warna langsung diganti dengan warna hijau dengan menggunakan method child gantiWarna lalu ditampilkan dengan method child tampilWarna.
 
-foto
+# Form Input
+Membuat form input sederhana menggunakan metode oop pada bahasa php.
 
-Untuk dapat menjadi sebuah objek, objek harus dibuat terlebih dahulu. Selanjutnya adalah instansiasi method untuk mendapatkan hasil seperti di bawah ini.
+Pada gambar dibawah ini terdapat method __construct yang berisi aksi pada form, displayForm() yang membentuk form html dan addField() yang berfungsi untuk menambah baris input.
+
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/forminput1.JPG)
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/forminput2.JPG)
+
+Kode diatas tidak dapat ditampilkan pada browser, maka dari itu terdapat file berbeda dengan kode seprti dibawah ini yang memanggil file dengan kode di atas lalu membuat objek dan instansiasi objek sehingga membentuk sebuah tabel input.
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/form1.JPG)
+![imag](https://github.com/fdlhrauf/Lab10Web/blob/main/foto/form2.JPG)
